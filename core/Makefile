@@ -4006,6 +4006,9 @@ endif
 ifdef BOARD_RECOVERYIMAGE_PARTITION_SIZE
 	$(hide) echo "recovery_size=$(BOARD_RECOVERYIMAGE_PARTITION_SIZE)" >> $(zip_root)/META/misc_info.txt
 endif
+ifdef HAS_ROOT
+	$(hide) echo "has_root=$(HAS_ROOT)" >> $(zip_root)/META/misc_info.txt
+endif
 ifdef TARGET_RECOVERY_FSTYPE_MOUNT_OPTIONS
 	@# TARGET_RECOVERY_FSTYPE_MOUNT_OPTIONS can be empty to indicate that nothing but defaults should be used.
 	$(hide) echo "recovery_mount_options=$(TARGET_RECOVERY_FSTYPE_MOUNT_OPTIONS)" >> $(zip_root)/META/misc_info.txt
