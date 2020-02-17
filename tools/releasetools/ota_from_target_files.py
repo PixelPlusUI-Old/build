@@ -1296,9 +1296,14 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   device = target_info.GetBuildProp("org.pixelplusui.device")
 
   script.Print("----------------------------------------------");
-  script.Print("                 PixelPlusUI                  ");
-  script.Print("                by @kostyajrz                 ");
+  script.Print("          ______  ______  __    __  ___      ");
+  script.Print("         / __  / / __  / / /   / / /  /      ");
+  script.Print("        / /_/ / / /_/ / / /   / / /  /       ");
+  script.Print("       /  ___/ /  ___/ / /   / / /  /        ");
+  script.Print("      /  /    /  /    / /___/ / /  /         ");
+  script.Print("     /__/    /__/     \______/ /__/          ");
   script.Print("----------------------------------------------");
+  script.Print(" Created by: @kostyajrz");
   script.Print(" Android: %s"%(android_version));
   script.Print(" Build ID: %s"%(build_id));
   script.Print(" Build Time: %s"%(build_date));
