@@ -1303,8 +1303,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("      /  /    /  /    / /___/ / /  /         ");
   script.Print("     /__/    /__/     \______/ /__/          ");
   script.Print("----------------------------------------------");
-  script.Print(" Created by: @kostyajrz");
-  script.Print(" Android: %s"%(android_version));
+  script.Print(" ROM by: @kostyajrz");
+  script.Print(" Android Version: %s"%(android_version));
   script.Print(" Build ID: %s"%(build_id));
   script.Print(" Build Time: %s"%(build_date));
   script.Print(" Security Patch: %s"%(security_patch));
