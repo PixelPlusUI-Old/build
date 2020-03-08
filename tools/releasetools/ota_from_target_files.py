@@ -1388,7 +1388,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.RunBackup("restore", sysmount)
 
   script.Mount("/system")
-  script.FormatPartition("/data/system/package_cache")
+  script.RunCleanCache()
   script.Unmount("/system")
 
   script.ShowProgress(0.05, 5)
