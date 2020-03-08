@@ -172,7 +172,7 @@ class EdifyGenerator(object):
         command, p.device)))
 
   def RunCleanCache(self):
-    self.script.append(('delete_recursive("/data/system/package_cache/1");'))
+    self.script.append(('delete_recursive("/data/system/package_cache");'))
 
   def ShowProgress(self, frac, dur):
     """Update the progress bar, advancing it over 'frac' over the next
