@@ -171,11 +171,6 @@ class EdifyGenerator(object):
     self.script.append(('run_program("/tmp/install/bin/backuptool.sh", "%s", "%s");' % (
         command, p.device)))
 
-  def FlashMagisk(self):
-    self.script.append('package_extract_dir("magisk", "/tmp/magisk");')
-    self.script.append('run_program("/sbin/busybox", "unzip", "/tmp/magisk/magisk.zip", "META-INF/com/google/android/*", "-d", "/tmp/magisk");')
-    self.script.append('run_program("/sbin/busybox", "sh", "/tmp/magisk/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/magisk/magisk.zip");')
-
   def RunCleanCache(self):
     self.script.append(('delete_recursive("/data/system/package_cache");'))
 
